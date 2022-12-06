@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application (Web)</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Caveat&family=Klee+One&family=Nerko+One&family=Patrick+Hand&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            background-color: blanchedalmond;
+
+        }
+
+        h1 {
+            font-family: 'Nerko One', cursive;
+            margin: 20px 0px 50px 0px;
+        }
+
+        label {
+            font-family: 'Klee One', cursive;
+            font-weight: bold;
+        }
+
+        .form_container {
+            width: 50%;
+            height: 650px;
+            margin: auto;
+            border: 2px solid grey;
+            border-radius: 10px;
+            margin-top: 60px;
+            background-color: rgb(128, 128, 128);
+            box-shadow: 4px 3px 10px black;
+
+        }
+
+        .heading {
+            text-align: center;
+            text-decoration: 2px dashed underline;
+
+        }
+
+        #fname,
+        #email,
+        #job_role,
+        #city,
+        #pin_code,
+        #start_date,
+        #cv,
+        #lname {
+            border: 1px solid black;
+            border-radius: 5px;
+            height: 40px;
+            width: 90%;
+        }
+
+
+
+
+        .l_fname,
+        #fname,
+        .l_lname,
+        #lname,
+        .label_email,
+        #email,
+        .label_job_role,
+        #job_role,
+        .label_address,
+        #address,
+        .label_city,
+        #city,
+        .label_pin_code,
+        #pin_code,
+        .label_start_date,
+        #start_date,
+        .label_cv,
+        #cv {
+            margin-left: 15px;
+            padding-left: 5px;
+
+
+        }
+
+        .l_fname,
+        .l_lname,
+        .label_email,
+        .label_job_role,
+        .label_address,
+        .label_city,
+        .label_pin_code,
+        .label_start_date,
+        .label_cv {
+            line-height: 30px;
+        }
+
+
+        .div_lname,
+        .div_fname,
+        .div_email,
+        .div_job_role,
+        .div_city,
+        .div_pin_code,
+        .div_start_date,
+        .div_cv {
+            width: 50%;
+            float: left;
+            margin-bottom: 20px;
+        }
+
+        .div_address {
+            margin-bottom: 20px;
+
+        }
+
+        #address {
+            border: 1px solid black;
+            border-radius: 5px;
+            height: 80px;
+            width: 95%;
+        }
+
+        #cv {
+            padding-top: 8px;
+            background-color: aliceblue;
+        }
+        .form_content{
+            width:90%;
+            margin:auto;
+        }
+        .apply_btn{
+            border:1px solid black;
+            border-radius: 5px;
+            height:35px;
+            width:30%;
+            background-color: rgb(0, 0, 0);
+            color:rgb(180, 180, 180);
+            box-shadow: 2px 1px 5px black;
+            
+
+        }
+        .div_apply{
+            text-align:center;
+            
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form_container">
+        <div class="form_content">
+            <h1 class="heading">Job Application (Web)</h1>
+            <div>
+                <form action="">
+                    <div class="div_fname">
+                        <label for="fname" class="l_fname">First Name</label><br>
+                        <input type="text" name="fname" id="fname" placeholder="ENter Your FIrst name">
+                        <br>
+                    </div>
+
+
+                    <div class="div_lname">
+                        <label for="lname" class="l_lname">Last Name</label><br>
+                        <input type="text" name="lname" id="lname" placeholder="ENter Your last name">
+                    </div>
+
+
+                    <div class="div_email">
+                        <label for="email" class="label_email">Email-ID</label><br>
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email ID">
+                    </div>
+
+
+                    <div class="div_job_role">
+                        <label for="job_role" class="label_job_role">Job Role</label><br>
+                        <select name="job_role" id="job_role">
+                            <option value="Front End Developer">Front End Developer</option>
+                            <option value="Back End Developer">Back End Developer</option>
+                            <option value="Data Scientist">Data Scientist</option>
+                            <option value="Devops Engineer">DevOps Engineer</option>
+                        </select>
+                    </div>
+
+                    <div class="address">
+                        <label for="address" class="label_address">Address</label><br>
+                        <textarea name="address" id="address" placeholder="Enter Your Address" rows="7" cols="85">
+                    </textarea>
+                    </div>
+
+                    <div class="div_city">
+                        <label for="city" class="label_city">City</label><br>
+                        <input type="text" name="city" id="city" placeholder="Enter Your City">
+                    </div>
+
+                    <div class="div_pin_code">
+                        <label for="pin_code" class="label_pin_code">Pin Code</label><br>
+                        <input type="number" name="city" id="pin_code" placeholder="Enter Pin Code">
+                    </div>
+
+                    <div class="div_start_date">
+                        <label for="start_date" class="label_start_date">Start Date</label><br>
+                        <input type="date" name="start_date" id="start_date">
+                    </div>
+
+                    <div class="div_cv">
+                        <label for="cv" class="label_cv">City</label><br>
+                        <input type="file" name="cv" id="cv">
+                    </div>
+
+                    <div class="div_apply">
+                        <button class="apply_btn" type="apply_btn" onclick="alert('Your form has been Submitted')">Apply Now</button>
+                    </div>
+
+
+
+
+
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
